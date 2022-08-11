@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/style.css">
+    <title>Игра "найди пару"</title>
+</head>
+<body>
+    <form class = "form">
+        <div class="absolute_block">
+            <label class="text label">Введите количество рядов и колонок карточек (от 2 до 10)</label>
+            <input class="numberblock input" autofocus type="number" min="2">
+        </div>
+        <div class="absolute_block  hidden">
+            <span class="text countdown_text">Игра закончится через</span>
+            <div class="numberblock countdown">60</div> 
+        </div>
+      
+    <button class="btn btn-start">Начать игру</button>    
+    </form>
+    <div class="play_board">
+
+    </div>
+    <script  src="pairs_game.js"></script>
+</body>
+</html>
