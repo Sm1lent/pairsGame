@@ -18,7 +18,8 @@ class Card {
       }
     });
     const front = createBlock(cardElement, 'card__front');
-    createBlock(front, 'card__content', 'div', this.value.toString());
+    front.style.backgroundImage = `url('./images/cat_${value}.PNG')`;
+
     createBlock(cardElement, 'card__back');
 
     this.element = cardElement;

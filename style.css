@@ -1,12 +1,14 @@
 body {
   margin-inline: auto;
-  background:#222 no-repeat center center / cover url("./images/blackback.jpg");
+  background:#665c4e no-repeat center center / cover url("./images/orangeback.png");
   padding: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fff;
   line-height: 1;
   min-height: 100dvh;
   margin: 0;
+  --dark: #9f4343;
+  --light: #ffe2af;
+  color: var(--dark)
 }
 
 * {
@@ -43,8 +45,8 @@ gap: 16px;
 .pairs__custom-input {
   width: 100px;
   text-align: center;
-  background-color: #222;
-  color: #fff;
+  background-color: var(--dark);
+  color: var(--light);
   border: none;
 }
 
@@ -60,10 +62,10 @@ gap: 16px;
   border: none;
   border-radius: 4px;
   padding: 5px 10px;
-  color: darkslateblue;
-  background-color: #9DCDEC;
+  color: var(--light);
+  background-color: var(--dark);
   font: 600 13px/13px Arial; 
-  box-shadow: 0 0 5px #9DCDEC, 0 0 10px #9DCDEC, 0 0 15px rgb(12, 64, 110), 0 0 20px rgb(12, 64, 110);
+  box-shadow: 0 0 5px var(--dark), 0 0 10px var(--dark), 0 0 15px var(--light), 0 0 20px var(--light);
   transition-timing-function: ease-in-out;
   transition-duration: .25s;
   transition-property: color,background-color;
@@ -87,7 +89,8 @@ gap: 16px;
 }
 
 .button:hover {
-  background-color: #9fffff;
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .pairs__label {
@@ -96,7 +99,8 @@ gap: 16px;
 }
 
 .pairs__label:has(input:checked) .button {
-  background-color: #fff;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
 .visually-hidden {
@@ -179,7 +183,7 @@ gap: 16px;
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: url('../images/grunge_texture.jpg');
+  background: url('./images/grunge_texture.jpg');
   background-position: center;
   background-size: cover;
   transition: transform .7s ease-out;
@@ -199,7 +203,7 @@ gap: 16px;
   border-radius: 10px;
   transform: rotateY(-180deg);
   transition: transform .7s ease-out, z-index .1s linear .35s;
-  background: url('../images/wawe.jpg');
+  background-image: url('./images/shirt.PNG');
   background-position: center;
   background-size: cover;
   pointer-events: none;
